@@ -1,0 +1,35 @@
+---------------------------------------------------------------------------------------------------------------------------------
+	INICIANDO APLICAÇÃO - COMMIT #01
+---------------------------------------------------------------------------------------------------------------------------------
+1. Iniciar projeto node com yarn
+	yarn init -y
+
+2. Instalar o typescript em modo desenvolvimento
+	yarn add typescript -D
+
+3.  Instalar o express
+	yarn add express
+
+4. Instalar os tipos do express
+	yarn add @types/express -D
+
+5. Inicializar o typescript
+	yarn tsc --init
+
+6. Criar a pasta /src
+
+7. Criar os arquivos:
+	/src
+		server.ts
+		routes.ts
+
+8. Instalar o ts-node-dev para rodar a aplicação
+	yarn add ts-node-dev -D
+	
+9. Criar scripts ts-node-dev em package.json
+	
+10. Para rodar aplicação
+	yarn dev
+
+
+//
