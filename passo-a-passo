@@ -1,16 +1,16 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	TRATANDO ERROS - COMMIT #02
+	CONFIGURANDO PRISMA - COMMIT #03
 ---------------------------------------------------------------------------------------------------------------------------------
-1. Instalar biblioteca de tratamento de erros
-	yarn add express-async-errors
+1. Instalar  prisma para conectar com banco de dados
+	yarn add prisma
 	
-2. Instalar o cors para permitir acesso de qualquer aplicação
-	yarn add cors
+2. Instalar prisma-client para gerar migrations
+	yarn add @prisma/client
 	
-3. Instalar os tipos para cors
-	yarn add @types/cors -D
+3. Iniciar prisma dentro da aplicação
+	npx prisma init
 	
 4. Para rodar aplicação
 	yarn dev
 
-//
+
