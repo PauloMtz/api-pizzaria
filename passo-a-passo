@@ -1,35 +1,16 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	INICIANDO APLICAÇÃO - COMMIT #01
+	TRATANDO ERROS - COMMIT #02
 ---------------------------------------------------------------------------------------------------------------------------------
-1. Iniciar projeto node com yarn
-	yarn init -y
-
-2. Instalar o typescript em modo desenvolvimento
-	yarn add typescript -D
-
-3.  Instalar o express
-	yarn add express
-
-4. Instalar os tipos do express
-	yarn add @types/express -D
-
-5. Inicializar o typescript
-	yarn tsc --init
-
-6. Criar a pasta /src
-
-7. Criar os arquivos:
-	/src
-		server.ts
-		routes.ts
-
-8. Instalar o ts-node-dev para rodar a aplicação
-	yarn add ts-node-dev -D
+1. Instalar biblioteca de tratamento de erros
+	yarn add express-async-errors
 	
-9. Criar scripts ts-node-dev em package.json
+2. Instalar o cors para permitir acesso de qualquer aplicação
+	yarn add cors
 	
-10. Para rodar aplicação
+3. Instalar os tipos para cors
+	yarn add @types/cors -D
+	
+4. Para rodar aplicação
 	yarn dev
-
 
 //
