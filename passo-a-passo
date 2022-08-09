@@ -1,16 +1,12 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	CONFIGURANDO PRISMA - COMMIT #03
+	CRIANDO MIGRATION USERS - COMMIT #04
 ---------------------------------------------------------------------------------------------------------------------------------
-1. Instalar  prisma para conectar com banco de dados
-	yarn add prisma
+1. Criar model em /prisma/schema.prisma
+
+2. Rodar migration
+	yarn prisma migrate dev
 	
-2. Instalar prisma-client para gerar migrations
-	yarn add @prisma/client
-	
-3. Iniciar prisma dentro da aplicação
-	npx prisma init
-	
-4. Para rodar aplicação
+3. Para rodar aplicação
 	yarn dev
 
 
