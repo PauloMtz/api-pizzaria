@@ -1,9 +1,13 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	CADASTRANDO USUÁRIO - COMMIT #07
+	CRIPTOGRAFANDO SENHA DE USUÁRIO - COMMIT #08
 --------------------------------------------------------------------------------------------------------------------------------
-1. Se der erro, reiniciar VsCode
+1. Instalar biblioteca bcryptjs
+	yarn add bcryptjs
+
+2. Instalar os tipos (em ambiente de desenvolvimento)
+	yarn add @types/bcryptjs -D
 	
-2. Rodar aplicação
+3. Rodar aplicação
 	yarn dev
 
 
