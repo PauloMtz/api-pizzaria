@@ -1,13 +1,13 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	CRIPTOGRAFANDO SENHA DE USUÁRIO - COMMIT #08
+	EFETUANDO LOGIN - COMMIT #09
 --------------------------------------------------------------------------------------------------------------------------------
-1. Instalar biblioteca bcryptjs
-	yarn add bcryptjs
+1. Criar AuthUserService
 
-2. Instalar os tipos (em ambiente de desenvolvimento)
-	yarn add @types/bcryptjs -D
+2. Criar AuthUserController
+
+3. Declarar rota no arquivo de rotas
 	
-3. Rodar aplicação
+4. Rodar aplicação
 	yarn dev
 
 
