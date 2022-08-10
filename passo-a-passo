@@ -1,11 +1,9 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	CONFIGURANDO ESTRUTURA - COMMIT #06
+	CADASTRANDO USUÁRIO - COMMIT #07
 --------------------------------------------------------------------------------------------------------------------------------
-1. Criar um controller e um service
-
-2. Chamar controller no router e chamar rota
+1. Se der erro, reiniciar VsCode
 	
-3. Rodar aplicação
+2. Rodar aplicação
 	yarn dev
 
 
