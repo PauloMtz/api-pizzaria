@@ -1,5 +1,6 @@
 import prismaClient from "../../prisma";
 import { compare } from 'bcryptjs';
+import { sign } from 'jsonwebtoken';
 
 interface AuthRequest {
     email: string,
@@ -26,7 +27,25 @@ class AuthUserService {
             throw new Error('Usuário não encontrado.');
         }
 
-        return {ok: true};
+        // gerar token de acesso
+        const token = sign({
+            name: user.name,
+            email: user.email
+        }, 
+            process.env.JWT_SECRET_KEY,
+            {
+                subject: user.id,
+                expiresIn: '1d'
+            }
+        );
+
+        return {
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            created_at: user.created_at,
+            token: token
+        };
     }
 }
 

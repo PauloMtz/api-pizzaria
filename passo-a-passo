@@ -1,13 +1,21 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	EFETUANDO LOGIN - COMMIT #09
+	LOGIN COM TOKEN JWT - COMMIT #10
 --------------------------------------------------------------------------------------------------------------------------------
-1. Criar AuthUserService
+1. Instalar biblioteca jsonwebtoken
+	yarn add jsonwebtoken
 
-2. Criar AuthUserController
+2. Instalar tipos (modo desenvolvimento)
+	yarn add @types/jsonwebtoken -D
 
-3. Declarar rota no arquivo de rotas
+3. Instalar dotenv
+	yarn add dotenv
+
+4. Definir uma chave secreta no arquivo .env
+
+5. Alterar no arquivo tsconfig.json
+	"strict": true, --> "strict": false
 	
-4. Rodar aplicação
+X. Rodar aplicação
 	yarn dev
 
 
