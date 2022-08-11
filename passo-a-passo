@@ -1,21 +1,13 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	LOGIN COM TOKEN JWT - COMMIT #10
+	CRIANDO MIDDLEWARE - COMMIT #11
 --------------------------------------------------------------------------------------------------------------------------------
-1. Instalar biblioteca jsonwebtoken
-	yarn add jsonwebtoken
+1. Criar service e controller
 
-2. Instalar tipos (modo desenvolvimento)
-	yarn add @types/jsonwebtoken -D
+2. Declarar a rota
 
-3. Instalar dotenv
-	yarn add dotenv
-
-4. Definir uma chave secreta no arquivo .env
-
-5. Alterar no arquivo tsconfig.json
-	"strict": true, --> "strict": false
+3. Criar middleware para pegar token do usuário
 	
-X. Rodar aplicação
+4. Rodar aplicação
 	yarn dev
 
 
