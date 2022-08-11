@@ -1,13 +1,22 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	CRIANDO MIDDLEWARE - COMMIT #11
+	DETALHES DO USUÁRIO - COMMIT #12
 --------------------------------------------------------------------------------------------------------------------------------
-1. Criar service e controller
+1. Criar arquivo index.d.ts
+	/src
+		/@types
+			/express
+				index.d.ts
 
-2. Declarar a rota
+2. Descomentar linha em tsconfig.json
+	"typeRoots": ["./src/@types"], 
 
-3. Criar middleware para pegar token do usuário
+3. Pega o id do usuário em isAuthenticated
+
+4. Busca usuário pelo id no banco em DetailUserService
+
+5. Passa para o controller
 	
-4. Rodar aplicação
+6. Rodar aplicação
 	yarn dev
 
 

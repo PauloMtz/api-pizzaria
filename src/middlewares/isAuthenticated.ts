@@ -26,7 +26,10 @@ export function isAuthenticated(req: Request, res: Response, next: NextFunction)
         // valida o token - pega a chave do arquivo .env
         const { sub } = verify(token, process.env.JWT_SECRET_KEY) as Payload; // interface
 
-        console.log('>>> ID user: ', sub);
+        //console.log('>>> ID user: ', sub);
+
+        // pega id do usuário do token
+        req.user_id = sub;
 
         return next();
 
