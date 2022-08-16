@@ -5,6 +5,7 @@ import { AuthUserController } from "./controllers/user/AuthUserController";
 import { DetailUserController } from "./controllers/user/DetailUserController";
 
 import { isAuthenticated } from "./middlewares/isAuthenticated";
+import { CreateCategoryController } from "./controllers/category/CreateCategoryController";
 
 const router = Router();
 
@@ -16,5 +17,7 @@ router.get('/api/teste', (req: Request, res: Response) => {
 router.post('/api/users', new CreateUserController().handle);
 router.post('/login', new AuthUserController().handle);
 router.get('/api/me', isAuthenticated, new DetailUserController().handle);
+
+router.post('/api/categories', isAuthenticated, new CreateCategoryController().handle);
 
 export { router };

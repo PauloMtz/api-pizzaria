@@ -1,22 +1,11 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	DETALHES DO USUÁRIO - COMMIT #12
+	CADASTRANDO CATEGORIA - COMMIT #13
 --------------------------------------------------------------------------------------------------------------------------------
-1. Criar arquivo index.d.ts
-	/src
-		/@types
-			/express
-				index.d.ts
+1. Criar service e controller
 
-2. Descomentar linha em tsconfig.json
-	"typeRoots": ["./src/@types"], 
-
-3. Pega o id do usuário em isAuthenticated
-
-4. Busca usuário pelo id no banco em DetailUserService
-
-5. Passa para o controller
+2. Declarar na rota
 	
-6. Rodar aplicação
+3. Rodar aplicação
 	yarn dev
 
 
