@@ -1,11 +1,19 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	LISTANDO CATEGORIAS - COMMIT #14
+	CADASTRANDO PRODUTO - COMMIT #15
 --------------------------------------------------------------------------------------------------------------------------------
 1. Criar service e controller
 
 2. Declarar na rota
-	
-3. Rodar aplicação
+
+3. Upload de imagem - instalar multer
+	yarn add multer
+
+4. Instalar tipos (typescript)
+	yarn add @types/multer -D
+
+5. Criar arquivo de configuração do multer
+
+6. Rodar aplicação
 	yarn dev
 
 
