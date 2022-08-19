@@ -1,9 +1,9 @@
 ---------------------------------------------------------------------------------------------------------------------------------
-	ACESSANDO IMAGEM PELO NAVEGADOR - COMMIT #16
+	LISTANDO PRODUTOS POR CATEGORIA - COMMIT #17
 --------------------------------------------------------------------------------------------------------------------------------
-1. Importar path no arquivo server.ts
+1. Criar service e controller
 
-2. declarar uma rota no arquivo server.ts
+2. declarar rota
 
 3. Rodar aplicação
 	yarn dev
