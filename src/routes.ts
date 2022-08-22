@@ -10,6 +10,7 @@ import { CreateCategoryController } from "./controllers/category/CreateCategoryC
 import { ListCategoryController } from "./controllers/category/ListCategoryController";
 import { CreateProductController } from "./controllers/product/CreateProductController";
 import { ListProdustsController } from "./controllers/product/ListProdustsController";
+import { CreateOrderController } from "./controllers/order/CreateOrderController";
 
 import uploadConfig from "./config/multerConfig";
 
@@ -32,5 +33,7 @@ router.get('/api/categories', isAuthenticated, new ListCategoryController().hand
 // esse 'file' no upload da imagem deve ser o nome do campo a ser enviada a foto
 router.post('/api/products', isAuthenticated, upload.single('file'), new CreateProductController().handle);
 router.get('/api/products', isAuthenticated, new ListProdustsController().handle);
+
+router.post('/api/orders', isAuthenticated, new CreateOrderController().handle);
 
 export { router };
