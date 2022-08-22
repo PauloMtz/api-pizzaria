@@ -11,6 +11,7 @@ import { ListCategoryController } from "./controllers/category/ListCategoryContr
 import { CreateProductController } from "./controllers/product/CreateProductController";
 import { ListProdustsController } from "./controllers/product/ListProdustsController";
 import { CreateOrderController } from "./controllers/order/CreateOrderController";
+import { RemoveOrderController } from "./controllers/order/RemoveOrderController";
 
 import uploadConfig from "./config/multerConfig";
 
@@ -35,5 +36,6 @@ router.post('/api/products', isAuthenticated, upload.single('file'), new CreateP
 router.get('/api/products', isAuthenticated, new ListProdustsController().handle);
 
 router.post('/api/orders', isAuthenticated, new CreateOrderController().handle);
+router.delete('/api/orders', isAuthenticated, new RemoveOrderController().handle);
 
 export { router };
