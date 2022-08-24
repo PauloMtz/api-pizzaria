@@ -17,6 +17,7 @@ import { RemoveItemController } from "./controllers/order/RemoveItemController";
 import { SendOrderController } from "./controllers/order/SendOrderController";
 import { ListOrdersController } from "./controllers/order/ListOrdersController";
 import { DetailOrderController } from "./controllers/order/DetailOrderController";
+import { FinishOrderController } from "./controllers/order/FinishOrderController";
 
 import uploadConfig from "./config/multerConfig";
 
@@ -49,5 +50,6 @@ router.delete('/api/orders/items', isAuthenticated, new RemoveItemController().h
 router.put('/api/orders/send', isAuthenticated, new SendOrderController().handle);
 router.get('/api/orders/send', isAuthenticated, new ListOrdersController().handle);
 router.get('/api/orders/details', isAuthenticated, new DetailOrderController().handle);
+router.put('/api/orders/finish', isAuthenticated, new FinishOrderController().handle);
 
 export { router };
